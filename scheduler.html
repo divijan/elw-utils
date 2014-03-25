@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+  $(document).ready(function(){
+	var gspinner = $( "#group" )
+	gspinner.spinner({ max: 99 });
+	gspinner.spinner("value", 11)
+	$(".hour").spinner({ min:0, max: 23 })
+	$(".minute").spinner({ min:0, max: 59 })
+	$( "#datepicker" ).datepicker({ dateFormat: "yy-mm-dd" });
+	var id = "Enrollment-ka01-aos_w11-201-"
+	var courseId = "aos_w11"
+	var onSite = [
+	  "10\\.14\\.17\\..+",
+      "10\\.35\\..+\\..+"
+	]
+  })
+  </script>
+</head>
+<body>
+<p>Group: ka<input id="group"></p>
+<p>Date: <input type="text" id="datepicker"></p>
+<p>From: <input class="hour" id="hfrom">:<input class="minute" id="mfrom"></p>
+<p>To: <input class="hour" id="hto">:<input class="minute" id="mto"></p> 
+ 
+</body>
+</html>
